@@ -1,10 +1,12 @@
 <?php
 function daoNguocChuoi($chuoi){
-    $chuoi1= '';
-    $length=0;
+    $chuoi1= ''; // Tạo chuỗi kết quả trướctrước
+    $length=0; // Tạo biến này để lưu độ dài chuỗichuỗi
+    // Kiếm tra kí tự đầu rồi đếm chuỗichuỗi
     while(isset($chuoi[$length])){
         $length++;
     }
+    // Duyệt từ sau ra trước
     for ($i=$length-1; $i>=0; $i--){
         $chuoi1 .=$chuoi[$i];
     }
